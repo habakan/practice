@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 import EffectButton from './EffectButton'
 import ContextA from './components/ContextSample/ContextA'
+import Counter1 from './components/ReducerSample/Counter1'
+import Counter2 from './components/ReducerSample/Counter2'
+import ReducerApp from './components/ReducerSample/ReducerApp'
 
 export const UserContext = createContext()
 export const HobbyContext = createContext()
@@ -33,6 +36,7 @@ function App() {
     <EffectButton />
   )
   */
+ /*
   const [user, setUser] = useState({
     name: 'セイラ',
     age: '17'
@@ -46,6 +50,16 @@ function App() {
           <ContextA />
         </HobbyContext.Provider>
       </UserContext.Provider>
+    </div>
+  )
+  */
+  return (
+    <div className="App">
+      {/*
+      <Counter1 />
+      <Counter2 />
+      */}
+      <ReducerApp />
     </div>
   )
 
